@@ -1,5 +1,6 @@
 import {ComponentPropsWithoutRef} from "react";
 
+
 export const DownloadIcon = (props: ComponentPropsWithoutRef<"svg" & { size?: number }>) => {
     return (
         <a href="/MonCV.pdf">
