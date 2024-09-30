@@ -1,11 +1,11 @@
 import {Header} from "@/app/_components/Header"
-import {MainTitle} from "@/app/_components/MainTitle";
+import {HostPage} from "@/app/_components/HostPage";
 
 export default function Home() {
     return (
         <main>
             <Header/>
-                <MainTitle/>
+                <HostPage/>
         </main>
     );
 }

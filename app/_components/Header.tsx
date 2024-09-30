@@ -1,8 +1,7 @@
-import { Section } from "./Section";
-import { Button } from "@/components/ui/button";
-import { GitHubIcon } from "@/app/_components/icons/GitHubIcon";
-import { LinkedInIcon } from "@/app/_components/icons/LinkedInIcon";
-import { DownloadIcon } from "@/app/_components/icons/DownloadIcon";
+import {Button} from "@/components/ui/button";
+import {GitHubIcon} from "@/app/_components/icons/GitHubIcon";
+import {LinkedInIcon} from "@/app/_components/icons/LinkedInIcon";
+import {DownloadIcon} from "@/app/_components/icons/DownloadIcon";
 
 export const Header = () => {
 
