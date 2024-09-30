@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <header className="sticky top-0">
             {/* Container for buttons aligned at the top-left */}
-            <div className="absolute top-0 left-0 m-4 flex space-x-4">
+            <div className="absolute top-0 right-0 m-4 flex space-x-4">
                 <Button className="p-2">
                     <GitHubIcon size={24}/>
                 </Button>
