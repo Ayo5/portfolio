@@ -8,10 +8,10 @@ export const HostPage = () => {
             {/* Buttons above the title */}
             <div className="mb-5 space-x-1">
                 <Link href="/projet">
-                    <Button className="p-2 font-sans text-gray-400">projet</Button>
+                    <Button className="p-2 font-sans text-gray-400 hover:text-white transition duration-300">projet</Button>
                 </Link>
                 <Link href="/about">
-                    <Button className="p-2 font-sans text-gray-400">à propos</Button>
+                    <Button className="p-2 font-sans text-gray-400 hover:text-white transition duration-300">à propos</Button>
                 </Link>
             </div>
 
