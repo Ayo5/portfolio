@@ -17,7 +17,7 @@ const About = () => {
                     alt="Moi en conférence"
                     width={300}
                     height={500}
-                    className="rounded-3xl rotate-90"
+                    className="rounded-3xl animate-slide-up-fade"
                 />
             </div>
 
