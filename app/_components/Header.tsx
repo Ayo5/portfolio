@@ -6,7 +6,7 @@ import {DownloadIcon} from "@/app/_components/icons/DownloadIcon";
 export const Header = () => {
 
     return (
-        <header className="sticky top-0">
+        <header className="sticky top-0 z-20">
             {/* Container for buttons aligned at the top-left */}
             <div className="absolute top-0 right-0 m-4 flex space-x-4">
                 <Button className="p-2 text-gray-500 hover:text-white transition duration-300">
