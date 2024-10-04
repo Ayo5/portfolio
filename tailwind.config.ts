@@ -59,8 +59,18 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+  		},
+		keyframes: {
+			'slide-up-fade': {
+				'0%': { transform: 'translateY(100%)', opacity: '0' },
+				'50%': { transform: 'translateY(90%)', opacity: '0' },
+				'100%': { transform: 'translateY(0)', opacity: '1' },
+			},
+		},
+		animation: {
+			'slide-up-fade': 'slide-up-fade 0.7s ease-out forwards',
+		},
+	},
   },
   plugins: [require("tailwindcss-animate")],
 };
