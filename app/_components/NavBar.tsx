@@ -18,7 +18,7 @@ const NavBar = () => {
                 <Link href="/" passHref>
                     <Button
                         className={`w-12 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-                            isActive("/") ? "bg-white/30 text-white" : "hover:text-white"
+                            isActive("/") ? "text-white" : "hover:text-white"
                         }`}
                     >
                         home
@@ -29,7 +29,7 @@ const NavBar = () => {
                 <Link href="/projet" passHref>
                     <Button
                         className={`w-20 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-                            isActive("/projet") ? "bg-white/30 text-white" : "hover:text-white"
+                            isActive("/projet") ? " text-white" : "hover:text-white"
                         }`}
                     >
                         projet
@@ -40,7 +40,7 @@ const NavBar = () => {
                 <Link href="/about" passHref>
                     <Button
                         className={`w-20 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-                            isActive("/about") ? "bg-white/30 text-white" : "hover:text-white"
+                            isActive("/about") ? " text-white" : "hover:text-white"
                         }`}
                     >
                         à propos
