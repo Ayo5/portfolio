@@ -13,7 +13,7 @@ const Projet = () => {
             <Card
                 title="Ray Tracer"
                 description="Une application en Java uniquement qui permet de simuler le comportement de la lumière sur un objet"
-                imageUrl="/Sphere.PNG"
+                imageUrl="public/Sphere.PNG"
                 altText="Capture d'écran du résultat"
                 href="https://github.com/Ayo5/RayTracerFromScratch"
                 tag="Java"
@@ -21,7 +21,7 @@ const Projet = () => {
             <Card
                 title="Marathon Web"
                 description="Un site un pres fonctionnel créer en 24h qui permet la lecture d'histoire dont vous êtes le héro"
-                imageUrl="/ScreenMarathonWeb.png"
+                imageUrl="public/ScreenMarathonWeb.png"
                 altText="Capture de la page d'accueil"
                 href="https://github.com/Ayo5/Marathon_du_web"
                 tag="Laravel"
@@ -29,7 +29,7 @@ const Projet = () => {
             <Card
                 title="Pok-dex"
                 description="Un site qui utilise une API Pokémon pour afficher les différents pokémon"
-                imageUrl="/pokedex.jpg"
+                imageUrl="public/pokedex.jpg"
                 altText="Capture de la page d'accueil"
                 href="https://github.com/Ayo5/Pok-dex"
                 tag="Python-Flask"
@@ -37,7 +37,7 @@ const Projet = () => {
             <Card
                 title="API Board Game"
                 description="Un site qui utilise une API défini par nous même qui permet de gerer la base de données des jeu plateau (méthode CRUD)"
-                imageUrl="/site_api_board_game.png"
+                imageUrl="public/site_api_board_game.png"
                 altText="Capture de la page d'accueil"
                 href="https://github.com/Ayo5/Pok-dex"
                 tag="PHP"

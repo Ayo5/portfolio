@@ -17,7 +17,7 @@ const About = () => {
             {/* Affichage des images */}
             <div className="flex justify-center my-20">
                 <Image
-                    src="/moi_en_espagne.jpg"
+                    src="public/moi_en_espagne.jpg"
                     alt="Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar"
                     width={300}
                     height={500}
@@ -46,7 +46,7 @@ const About = () => {
 
             <div className="flex justify-center my-20">
                 <Image
-                    src="/moi_en_conference.jpg"
+                    src="public/moi_en_conference.jpg"
                     alt="Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar"
                     width={500}
                     height={300}
@@ -77,7 +77,7 @@ const About = () => {
 
             <div className="flex justify-center my-20">
                 <Image
-                    src="/moi_en_festival.PNG"
+                    src="public/moi_en_festival.PNG"
                     alt="Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar"
                     width={300}
                     height={500}

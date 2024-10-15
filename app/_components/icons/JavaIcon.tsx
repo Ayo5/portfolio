@@ -7,7 +7,7 @@ interface JavaIconProps extends ComponentPropsWithoutRef<"svg"> {
 
 export const JavaIcon : React.FC<JavaIconProps> = ({ size = 24, ...props}) => {
     return (
-        <svg
+        <svggit 
             width={size}
             height={size}
             viewBox="0 0 256 346"
@@ -42,6 +42,6 @@ export const JavaIcon : React.FC<JavaIconProps> = ({ size = 24, ...props}) => {
                     d="M95.2683055,344.665367 C157.466996,348.646865 252.980131,342.45632 255.24224,313.025629 C255.24224,313.025629 250.893964,324.182575 203.838371,333.042967 C150.750487,343.033484 85.2740655,341.867055 46.4393309,335.464262 C46.4402618,335.463331 54.3892945,342.043927 95.2683055,344.665367"
                     fill="#5382A1"></path>
             </g>
-        </svg>
+        </svggit>
     )
 }
