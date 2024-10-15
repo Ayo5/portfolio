@@ -1,11 +1,17 @@
 import {ComponentPropsWithoutRef} from "react";
 
-export const GitHubIcon = (props: ComponentPropsWithoutRef<"svg" & {size? : number}>) => {
+
+interface GitHubIconProps extends ComponentPropsWithoutRef<"svg"> {
+    size?: number;
+}
+
+
+export const GitHubIcon: React.FC<GitHubIconProps> = ({ size = 24, ...props})=> {
     return (
         <a href="https://github.com/Ayo5" >
         <svg
-            width={props.size}
-            height={props.size}
+            width={size}
+            height={size}
             viewBox="0 0 256 250"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

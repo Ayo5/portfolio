@@ -1,10 +1,15 @@
 import {ComponentPropsWithoutRef} from "react";
 
-export const JavaIcon = (props: ComponentPropsWithoutRef<"svg" & {size? : number}>) => {
+
+interface JavaIconProps extends ComponentPropsWithoutRef<"svg"> {
+    size?: number;
+}
+
+export const JavaIcon : React.FC<JavaIconProps> = ({ size = 24, ...props}) => {
     return (
         <svg
-            width={props.size}
-            height={props.size}
+            width={size}
+            height={size}
             viewBox="0 0 256 346"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
