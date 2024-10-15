@@ -13,7 +13,7 @@ const Projet = () => {
                 <Card
                     title="Ray Tracer"
                     description="Une application en Java qui permet de simuler le comportement de la lumière sur un objet"
-                    imageUrl="./public/Sphere.PNG"
+                    imageUrl="./Sphere.PNG"
                     altText="Capture d'écran du résultat"
                     href="https://github.com/Ayo5/RayTracerFromScratch"
                     tag="Java"
