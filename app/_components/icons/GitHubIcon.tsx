@@ -8,7 +8,7 @@ interface GitHubIconProps extends ComponentPropsWithoutRef<"svg"> {
 
 export const GitHubIcon: React.FC<GitHubIconProps> = ({ size = 24, ...props})=> {
     return (
-        <a href="https://github.com/Ayo5" >
+        <a href="https://github.com/Ayo5" target="_blank" >
         <svg
             width={size}
             height={size}

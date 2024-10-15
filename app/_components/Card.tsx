@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, imageUrl, altText, href , tag }) => {
     return (
-        <div className="max-w-sm rounded-3xl border-2 border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+        <div className="max-w-sm rounded-3xl border-2 border-white/10 overflow-hidden shadow-md hover:shadow-white/20 transition-shadow duration-300">
             <Image
                 className="w-auto h-auto"
                 src={imageUrl}

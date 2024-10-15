@@ -7,7 +7,7 @@ interface LinkedInIconProps extends ComponentPropsWithoutRef<"svg"> {
 
 export const LinkedInIcon : React.FC<LinkedInIconProps> = ({ size = 24, ...props}) => {
     return (
-        <a href="https://www.linkedin.com/in/abdelkader-daï-89283b291/">
+        <a href="https://www.linkedin.com/in/abdelkader-daï-89283b291/" target="_blank">
         <svg
             width={size}
             height={size}
