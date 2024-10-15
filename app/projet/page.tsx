@@ -21,7 +21,7 @@ const Projet = () => {
                 <Card
                     title="Pok-dex"
                     description="Un site web en Python-Flask qui utilise une API Pokémon pour afficher les différents pokémon"
-                    imageUrl="/pokedex.jpg"
+                    imageUrl="./pokedex.jpg"
                     altText="Capture de la page d'accueil"
                     href="https://github.com/Ayo5/Pok-dex"
                     tag="Python-Flask"
@@ -29,7 +29,7 @@ const Projet = () => {
                 <Card
                     title="API Board Game"
                     description="Un site qui utilise une API défini par nous même qui permet de gerer la base de données des jeu plateau (méthode CRUD)"
-                    imageUrl="/site_api_board_game.png"
+                    imageUrl="./site_api_board_game.png"
                     altText="Capture de la page d'accueil"
                     href="https://github.com/Ayo5/Pok-dex"
                     tag="PHP"
@@ -37,7 +37,7 @@ const Projet = () => {
                 <Card
                     title="Marathon Web"
                     description="Un site un pres fonctionnel créer en 24h qui permet la lecture d'histoire dont vous êtes le héro"
-                    imageUrl="/ScreenMarathonWeb.png"
+                    imageUrl="./ScreenMarathonWeb.png"
                     altText="Capture de la page d'accueil"
                     href="https://github.com/Ayo5/Marathon_du_web"
                     tag="Laravel"
