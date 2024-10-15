@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const HostPage = () => {
     return (
-        <Section className="flex flex-col items-center justify-center h-screen bg-cover bg-center">
+        <Section className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center">
             {/* Buttons above the title */}
             <div className="mb-5 space-x-1">
                 <Link href="/projet">
