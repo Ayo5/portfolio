@@ -4,7 +4,6 @@ import {ComponentPropsWithoutRef} from "react";
 interface DownloadIconProps extends ComponentPropsWithoutRef<"svg"> {
     size?: number;
 }
-
 export const DownloadIcon: React.FC<DownloadIconProps> = ({ size = 24, ...props}) => {
     return (
         <a href="./MonCV.pdf" target="_blank">
