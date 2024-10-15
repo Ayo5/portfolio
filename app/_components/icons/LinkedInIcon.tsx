@@ -1,11 +1,16 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const LinkedInIcon = (props: ComponentPropsWithoutRef<"svg" & {size? : number}>) => {
+interface LinkedInIconProps extends ComponentPropsWithoutRef<"svg"> {
+    size?: number;
+}
+
+
+export const LinkedInIcon : React.FC<LinkedInIconProps> = ({ size = 24, ...props}) => {
     return (
         <a href="https://www.linkedin.com/in/abdelkader-daï-89283b291/">
         <svg
-            width={props.size}
-            height={props.size}
+            width={size}
+            height={size}
             viewBox="0 0 256 256"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

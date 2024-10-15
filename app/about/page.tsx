@@ -30,23 +30,17 @@ const About = () => {
             <div className="text-center">
                 <p className="text-justify ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-200">
                     Je suis un développeur junior passionné par la création de solutions innovantes et
-                    l'amélioration de l'expérience utilisateur. Mon expertise inclut des technologies modernes
-                    et un engagement envers le développement durable.
+                    l&apos;amélioration de l&apos;expérience utilisateur. Mais au-delà du développement, je suis aussi passionné par
+                    par les voyages, le sport et la musique
                 </p>
 
                 <p className="text-justify mt-4 ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-400">
-                    J'aime beaucoup les voyages, car je trouve que c'est une excellente manière de sortir de ma zone de
-                    confort. Voyager me permet de découvrir de nouvelles cultures, traditions et modes de vie, ce qui
-                    est essentiel pour élargir mes horizons.
-                    Chaque destination a sa propre histoire, et en rencontrant des gens issus de différents milieux,
-                    j'ai l'opportunité d'apprendre de nouvelles façons de penser et de vivre.
-                    Ces expériences enrichissantes m'ont aidé à déconstruire certains de mes préjugés et à développer
-                    une plus grande empathie envers les autres.
-                    De plus, les voyages me donnent l'occasion de m'immerger dans des paysages à couper le souffle, que
-                    ce soit des plages paradisiaques, des montagnes majestueuses ou des villes animées.
-                    Chaque voyage est une aventure unique, remplie de moments mémorables et de leçons précieuses qui me
-                    façonnent en tant que personne. En fin de compte, je considère que voyager est une véritable école
-                    de vie qui contribue à mon développement personnel.
+                    Voyager est bien plus qu’un simple loisir pour moi : c&apos;est une véritable source d’inspiration
+                    et d&apos;épanouissement. Chaque destination que je découvre m’offre une occasion unique de m&apos;enrichir
+                    personnellement. J’aime explorer de nouvelles cultures, goûter à des spécialités locales et
+                    rencontrer des personnes aux parcours variés. Ces expériences me permettent d’élargir mon regard
+                    sur le monde et d’apporter une ouverture d’esprit dans tous les aspects de ma vie,
+                    y compris dans mon travail.
                 </p>
             </div>
 
@@ -62,24 +56,22 @@ const About = () => {
 
             <div className="text-center">
                 <p className="text-justify ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-800">
-                    Je suis un développeur junior passionné par la création de solutions innovantes et
-                    l'amélioration de l'expérience utilisateur. Mon expertise inclut des technologies modernes
-                    et un engagement envers le développement durable.
+                    Je suis également passionné par le sport. Comme vous pouvez le voir ci-dessus, j&apos;ai participé à un séminaire organisé par Orange, axé sur le sport.
                 </p>
 
                 <p className="text-justify mt-4 ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-1000">
-                    J'aime beaucoup les voyages, car je trouve que c'est une excellente manière de sortir de ma zone de
-                    confort. Voyager me permet de découvrir de nouvelles cultures, traditions et modes de vie, ce qui
-                    est essentiel pour élargir mes horizons.
-                    Chaque destination a sa propre histoire, et en rencontrant des gens issus de différents milieux,
-                    j'ai l'opportunité d'apprendre de nouvelles façons de penser et de vivre.
-                    Ces expériences enrichissantes m'ont aidé à déconstruire certains de mes préjugés et à développer
-                    une plus grande empathie envers les autres.
-                    De plus, les voyages me donnent l'occasion de m'immerger dans des paysages à couper le souffle, que
-                    ce soit des plages paradisiaques, des montagnes majestueuses ou des villes animées.
-                    Chaque voyage est une aventure unique, remplie de moments mémorables et de leçons précieuses qui me
-                    façonnent en tant que personne. En fin de compte, je considère que voyager est une véritable école
-                    de vie qui contribue à mon développement personnel.
+                    Les sports collectifs et de combat sont bien plus qu&apos;une simple activité physique pour moi ;
+                    ils représentent une véritable passion qui façonne ma personnalité et mon approche de la vie.
+                    Pratiquer un sport collectif, que ce soit le football ou encore le basket-ball,
+                    m’a appris l’importance de la collaboration, de la communication et de l’esprit d’équipe.
+                    Chaque match est une occasion de travailler ensemble vers un objectif commun,
+                    de surmonter des défis et de célébrer des victoires, grandes ou petites.
+                    Ces expériences me rappellent que le succès réside souvent dans la synergie entre les membres
+                    d&apos;une équipe.
+                    D’un autre côté, les sports de combat, comme la boxe ou le mma, m&apos;ont enseigné la discipline,
+                    la résilience et la maîtrise de soi. Chaque entraînement est un défi qui pousse mes limites physiques
+                    et mentales. J’apprécie l’aspect individuel de ces disciplines, où chaque progrès est le fruit de
+                    mes efforts et de ma détermination.
                 </p>
             </div>
 
@@ -95,24 +87,20 @@ const About = () => {
 
             <div className="text-center">
                 <p className="text-justify ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-200">
-                    Je suis un développeur junior passionné par la création de solutions innovantes et
-                    l'amélioration de l'expérience utilisateur. Mon expertise inclut des technologies modernes
-                    et un engagement envers le développement durable.
+                    Je suis également passionné par la musique. Comme vous pouvez le voir ci-dessus, voici une photo de mes amis et moi au Paradis Artificiel.
                 </p>
 
                 <p className="text-justify mt-4 ml-20 mr-20 text-1xl text-white animate-slide-up-fade animation-delay-400">
-                    J'aime beaucoup les voyages, car je trouve que c'est une excellente manière de sortir de ma zone de
-                    confort. Voyager me permet de découvrir de nouvelles cultures, traditions et modes de vie, ce qui
-                    est essentiel pour élargir mes horizons.
-                    Chaque destination a sa propre histoire, et en rencontrant des gens issus de différents milieux,
-                    j'ai l'opportunité d'apprendre de nouvelles façons de penser et de vivre.
-                    Ces expériences enrichissantes m'ont aidé à déconstruire certains de mes préjugés et à développer
-                    une plus grande empathie envers les autres.
-                    De plus, les voyages me donnent l'occasion de m'immerger dans des paysages à couper le souffle, que
-                    ce soit des plages paradisiaques, des montagnes majestueuses ou des villes animées.
-                    Chaque voyage est une aventure unique, remplie de moments mémorables et de leçons précieuses qui me
-                    façonnent en tant que personne. En fin de compte, je considère que voyager est une véritable école
-                    de vie qui contribue à mon développement personnel.
+                    La musique est une véritable source d’inspiration et d’émotion dans ma vie.
+                    Elle me transporte et me permet d’exprimer mes sentiments de manière unique.
+                    J’apprécie différents genres, des mélodies apaisantes aux rythmes entraînants,
+                    chaque morceau a le pouvoir de me raconter une histoire.
+                    Que ce soit en écoutant mes artistes préférés ou en découvrant de nouveaux talents,
+                    la musique m&apos;accompagne dans mes moments de détente et de réflexion.
+                    J’aime également participer à des concerts et des festivals,
+                    où l’énergie collective crée une expérience inoubliable.
+                    Pour moi, la musique est bien plus qu’un simple divertissement ;
+                    c’est un moyen de connexion avec les autres et une expression authentique de mon identité.
                 </p>
             </div>
         </div>
