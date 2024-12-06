@@ -13,6 +13,9 @@ export const HostPage = () => {
                 <Link href="/about">
                     <Button className="p-2 font-sans text-gray-400 hover:text-white transition duration-300">à propos</Button>
                 </Link>
+                <Link href="/skill">
+                    <Button className="p-2 font-sans text-gray-400 hover:text-white transition duration-300">compétences</Button>
+                </Link>
             </div>
 
             {/* Title with typing animation */}

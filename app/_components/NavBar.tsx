@@ -46,6 +46,15 @@ const NavBar = () => {
                         à propos
                     </Button>
                 </Link>
+                <Link href="/skill" passHref>
+                    <Button
+                        className={`w-20 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
+                            isActive("/skill") ? " text-white" : "hover:text-white"
+                        }`}
+                    >
+                        compétences
+                    </Button>
+                </Link>
             </div>
         </div>
     );
