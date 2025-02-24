@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, altText, href
                 quality={100} // Amélioration de la qualité de l'image
             />
             <div className="px-6 py-4">
-                <a href={href} target="_blank" rel="noopener noreferrer"> {/* Lien appliqué uniquement au titre */}
+                <a href={href}  rel="noopener noreferrer"> {/* Lien appliqué uniquement au titre */}
                     <h2 className="font-bold text-xl mb-2 hover:underline">{title}</h2>
                 </a>
                 <p className="text-white text-base">{description}</p>

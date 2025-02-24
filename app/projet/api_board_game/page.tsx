@@ -120,7 +120,7 @@ const ApiBoardGamePage: React.FC = () => {
                 <div className="border-2 border-white/10 rounded-3xl p-6 mb-8">
                     <h2 className="text-2xl font-semibold mb-4">Liens et ressources</h2>
                     <div className="flex flex-col space-y-3">
-                        <Link href="https://github.com/Ayo5/SIte_API_Boardgame" className="text-blue-600 hover:underline">
+                        <Link href="https://github.com/Ayo5/SIte_API_Boardgame" target="_blank" className="text-blue-600 hover:underline">
                             Dépôt GitHub
                         </Link>
                     </div>
