@@ -32,7 +32,7 @@ const Projet = () => {
                         description="Un site qui utilise une API défini par nous même qui permet de gerer la base de données des jeu plateau (méthode CRUD)"
                         imageUrl="./site_api_board_game.png"
                         altText="Capture de la page d'accueil"
-                        href="https://github.com/Ayo5/Pok-dex"
+                        href="/projet/api_board_game"
                         tag="PHP"
                     />
                     <Card
@@ -40,7 +40,7 @@ const Projet = () => {
                         description="Un site un pres fonctionnel créer en 24h qui permet la lecture d'histoire dont vous êtes le héro"
                         imageUrl="./ScreenMarathonWeb.png"
                         altText="Capture de la page d'accueil"
-                        href="https://github.com/Ayo5/Marathon_du_web"
+                        href="/projet/marathon_web"
                         tag="Laravel"
                     />
                 </div>
