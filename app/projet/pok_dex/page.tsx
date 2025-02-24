@@ -26,7 +26,7 @@ const PokeDexPage: React.FC = () => {
                     <div className="flex justify-center my-6">
                         <div className="relative w-full max-w-2xl h-64 md:h-96">
                             <Image
-                                src="/pokedex.jpg"
+                                src="./pokedex.jpg"
                                 alt="Capture de la page d'accueil du Pokedex"
                                 layout="fill"
                                 objectFit="contain"

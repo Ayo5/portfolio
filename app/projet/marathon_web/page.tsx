@@ -25,7 +25,7 @@ const MarathonWebPage: React.FC = () => {
                     <div className="flex justify-center my-6">
                         <div className="relative w-full max-w-2xl h-64 md:h-96">
                             <Image
-                                src="/ScreenMarathonWeb.png"
+                                src="./ScreenMarathonWeb.png"
                                 alt="Capture de la page d'accueil du Marathon Web"
                                 layout="fill"
                                 objectFit="contain"
