@@ -1,5 +1,5 @@
-import { Section } from "@/app/_components/Section";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
+import { Section } from "lucide-react";
 import Link from "next/link";
 
 export const HostPage = () => {
