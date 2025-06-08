@@ -1,18 +1,24 @@
-import { Button } from "@/app/components/ui/button";
-import { Section } from "lucide-react";
+"use client";
+
+import { Section } from "@/app/_components/Section";
+import { Button } from "@/components/ui/button";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 
 export const HostPage = () => {
+  // Récupérer la locale actuelle pour créer des liens corrects
+  const locale = useLocale();
+
   return (
     <Section className='flex flex-col items-center justify-center min-h-screen bg-cover bg-center'>
       {/* Buttons above the title */}
       <div className='mb-5 space-x-1'>
-        <Link href='/projet'>
+        <Link href={`/${locale}/projet`}>
           <Button className='p-2 font-sans text-gray-400 hover:text-white transition duration-300'>
             projet
           </Button>
         </Link>
-        <Link href='/about'>
+        <Link href={`/${locale}/about`}>
           <Button className='p-2 font-sans text-gray-400 hover:text-white transition duration-300'>
             à propos
           </Button>
@@ -25,7 +31,7 @@ export const HostPage = () => {
       </h1>
 
       {/* Text below the title */}
-      <p className='sm:text-xs lg:text-lg mt-5 text-center text-gray-300'>
+      <p className='text-xs sm:text-sm md:text-base lg:text-lg mt-5 text-center text-gray-300'>
         Développeur junior et créatif
       </p>
 

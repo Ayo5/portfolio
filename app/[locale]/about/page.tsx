@@ -16,7 +16,7 @@ const About = () => {
 
       {/* Affichage des images */}
       <div className='flex justify-center my-20'>
-        <div className="relative h-[500px] w-[300px]">
+        <div className='relative h-[500px] w-[300px]'>
           <Image
             src='/moi_en_espagne.jpg' // Notez le '/' au début du chemin
             alt='Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar'

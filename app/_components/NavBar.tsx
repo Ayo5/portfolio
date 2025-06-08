@@ -1,6 +1,6 @@
 "use client"; // Indique que ce composant est Client-side
 
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -16,8 +16,6 @@ const NavBar = () => {
     <div className='flex justify-center sticky top-0 p-4 shadow-md z-10'>
       <div className='space-x-4'>
         {" "}
-        {/* Espacement entre les boutons */}
-        {/* Home Link */}
         <Link href={`/${locale}`} passHref>
           <Button
             className={`w-12 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
