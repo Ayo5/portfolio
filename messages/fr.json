@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "Accueil",
+    "welcome": "Bienvenue sur mon portfolio"
+  },
+  "about": {
+    "title": "À propos de moi"
+  },
+  "projects": {
+    "title": "Projets"
+  }
+}

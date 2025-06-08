@@ -30,7 +30,7 @@ const RayTracerPage: React.FC = () => {
           <div className='flex justify-center my-6'>
             <div className='relative w-full max-w-2xl h-64 md:h-96'>
               <Image
-                src='/Sphere.PNG'
+                src='./Sphere.PNG'
                 alt="Rendu d'une sphère réfléchissante avec illumination globale"
                 layout='fill'
                 objectFit='contain'

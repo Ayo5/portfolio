@@ -1,12 +1,14 @@
 "use client"; // Indique que ce composant est Client-side
 
 import { Button } from "@/app/components/ui/button";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const pathname = usePathname(); // Obtenir l'URL actuelle
 
+  const locale = useLocale();
   // Fonction pour vérifier si un lien est actif
   const isActive = (href: string) => pathname === href;
 
@@ -16,30 +18,30 @@ const NavBar = () => {
         {" "}
         {/* Espacement entre les boutons */}
         {/* Home Link */}
-        <Link href='/' passHref>
+        <Link href={`/${locale}`} passHref>
           <Button
             className={`w-12 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-              isActive("/") ? "text-white" : "hover:text-white"
+              isActive(`/${locale}`) ? "text-white" : "hover:text-white"
             }`}
           >
             home
           </Button>
         </Link>
         {/* Projet Link */}
-        <Link href='/projet' passHref>
+        <Link href={`/${locale}/projet`} passHref>
           <Button
             className={`w-20 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-              isActive("/projet") ? " text-white" : "hover:text-white"
+              isActive(`/${locale}/projet`) ? " text-white" : "hover:text-white"
             }`}
           >
             projet
           </Button>
         </Link>
         {/* About Link */}
-        <Link href='/about' passHref>
+        <Link href={`/${locale}/about`} passHref>
           <Button
             className={`w-20 h-12 p-2 font-sans text-gray-400 rounded-full transition duration-300 ${
-              isActive("/about") ? " text-white" : "hover:text-white"
+              isActive(`/${locale}/about`) ? " text-white" : "hover:text-white"
             }`}
           >
             à propos

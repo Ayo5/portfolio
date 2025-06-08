@@ -1,5 +1,5 @@
-import { Header } from "@/[locale]/app/_components/Header";
-import NavBar from "@/[locale]/app/_components/NavBar";
+import { Header } from "@/app/_components/Header";
+import NavBar from "@/app/_components/NavBar";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -30,7 +30,7 @@ const ApiBoardGamePage: React.FC = () => {
           <div className='flex justify-center my-6'>
             <div className='relative w-full max-w-2xl h-64 md:h-96'>
               <Image
-                src='./site_api_board_game.png'
+                src='/site_api_board_game.png'
                 alt="Capture de la page d'accueil du site API Board Game"
                 layout='fill'
                 objectFit='contain'

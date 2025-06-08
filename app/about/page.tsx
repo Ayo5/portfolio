@@ -1,7 +1,6 @@
-// Importation pour les composants nécessaires
-import { Header } from "@/app/_components/Header";
-import NavBar from "@/app/_components/NavBar";
-import Image from "next/image";
+import Image from "next/image"; // Importation du composant Image de Next.js
+import { Header } from "../_components/Header";
+import NavBar from "../_components/NavBar";
 
 const About = () => {
   return (
@@ -16,15 +15,13 @@ const About = () => {
 
       {/* Affichage des images */}
       <div className='flex justify-center my-20'>
-        <div className="relative h-[500px] w-[300px]">
-          <Image
-            src='/moi_en_espagne.jpg' // Notez le '/' au début du chemin
-            alt='Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar'
-            fill
-            className='rounded-3xl animate-slide-up-fade object-cover'
-            priority
-          />
-        </div>
+        <Image
+          src='/moi_en_espagne.jpg'
+          alt='Moi durant mon voyage en Espagne plus précisement à Pineda-de-Mar'
+          width={300}
+          height={500}
+          className='rounded-3xl animate-slide-up-fade'
+        />
       </div>
 
       {/* Contenu textuel avec animation */}

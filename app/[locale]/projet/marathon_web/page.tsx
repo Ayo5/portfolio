@@ -1,5 +1,5 @@
-import { Header } from "@/[locale]/app/_components/Header";
-import NavBar from "@/[locale]/app/_components/NavBar";
+import { Header } from "@/app/_components/Header";
+import NavBar from "@/app/_components/NavBar";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -29,7 +29,7 @@ const MarathonWebPage: React.FC = () => {
           <div className='flex justify-center my-6'>
             <div className='relative w-full max-w-2xl h-64 md:h-96'>
               <Image
-                src='./ScreenMarathonWeb.png'
+                src='/ScreenMarathonWeb.png'
                 alt="Capture de la page d'accueil du Marathon Web"
                 layout='fill'
                 objectFit='contain'
