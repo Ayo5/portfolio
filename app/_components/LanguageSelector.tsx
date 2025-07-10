@@ -54,7 +54,7 @@ export function LanguageSelector() {
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                    <Globe className="h-7 w-7 mt-1 text-gray-500 hover:text-white transition duration-300" />
+                    <Globe className="h-7 w-7 mr-auto text-gray-500 hover:text-white transition duration-300" />
                     <span className="text-2xl mt-1">{currentLanguage.flag}</span>
                 </Button>
             </DropdownMenuTrigger>
@@ -63,7 +63,7 @@ export function LanguageSelector() {
                     <DropdownMenuItem
                         key={language.code}
                         onClick={() => handleLanguageChange(language)}
-                        className="flex items-center gap-2 cursor-pointer text-gray-500 hover:text-white transition duration-300 min-w-[100px]"
+                        className=" gap-2 cursor-pointer text-gray-500 hover:text-white transition duration-300"
                     >
                         <span>{language.flag}</span>
                         <span>{language.name}</span>
