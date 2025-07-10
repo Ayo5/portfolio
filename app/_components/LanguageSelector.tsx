@@ -6,9 +6,8 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { usePathname, useRouter } from "@/i18n/navigation";
 import { Globe } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type Language = {
@@ -32,30 +31,31 @@ const languages: Language[] = [
 
 export function LanguageSelector() {
     const router = useRouter();
-    const pathname = usePathname();
-    const locale = useLocale();
-    const [currentLanguage, setCurrentLanguage] = useState<Language>(
-        languages.find((lang) => lang.code === locale) || languages[0]
-    );
+    const [currentLanguage, setCurrentLanguage] = useState<Language>(languages[0]);
 
     useEffect(() => {
-        const currentLang = languages.find((lang) => lang.code === locale);
-        if (currentLang) {
-            setCurrentLanguage(currentLang);
+        const savedLanguage = localStorage.getItem("userLanguage");
+        if (savedLanguage) {
+            const language = languages.find((lang) => lang.code === savedLanguage);
+            if (language) {
+                setCurrentLanguage(language);
+            }
         }
-    }, [locale]);
+    }, []);
 
     const handleLanguageChange = (language: Language) => {
         setCurrentLanguage(language);
-        router.push(pathname, { locale: language.code });
+        localStorage.setItem("userLanguage", language.code);
+        document.cookie = `userLanguage=${language.code}; path=/; max-age=${60 * 60 * 24 * 365}`;
+        router.refresh();
     };
 
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                    <Globe className="h-7 w-7 mr-auto text-gray-500 hover:text-white transition duration-300" />
-                    <span className="text-2xl mt-1">{currentLanguage.flag}</span>
+                <Button variant="ghost" size="sm" className="flex items-center gap-1 p-2">
+                    <Globe className="h-6 w-6 text-gray-600 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition duration-300" />
+                    <span className="text-xl">{currentLanguage.flag}</span>
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
@@ -63,7 +63,7 @@ export function LanguageSelector() {
                     <DropdownMenuItem
                         key={language.code}
                         onClick={() => handleLanguageChange(language)}
-                        className=" gap-2 cursor-pointer text-gray-500 hover:text-white transition duration-300"
+                        className="flex items-center gap-2 cursor-pointer text-gray-600 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition duration-300 min-w-[100px]"
                     >
                         <span>{language.flag}</span>
                         <span>{language.name}</span>
