@@ -20,7 +20,7 @@ const Projet = () => {
         <Card
           title="Ray Tracer"
           description="Une application en Java qui permet de simuler le comportement de la lumière sur un objet"
-          imageUrl="/Sphere.PNG"
+          imageUrl="/projet/Sphere.PNG"
           altText="Capture d'écran du résultat"
           href="./projet/ray_tracer"
           tag="Java"
@@ -28,7 +28,7 @@ const Projet = () => {
         <Card
           title="Pok-dex"
           description="Un site web en Python-Flask qui utilise une API Pokémon pour afficher les différents pokémon"
-          imageUrl="/pokedex.jpg"
+          imageUrl="/projet/pokedex.jpg"
           altText="Capture de la page d'accueil"
           href="./projet/pok_dex"
           tag="Python-Flask"
@@ -36,7 +36,7 @@ const Projet = () => {
         <Card
           title="API Board Game"
           description="Un site qui utilise une API définie par nous-même qui permet de gérer la base de données des jeux de plateau (méthode CRUD)"
-          imageUrl="/site_api_board_game.png"
+          imageUrl="/projet/site_api_board_game.png"
           altText="Capture de la page d'accueil"
           href="./projet/api_board_game"
           tag="PHP"
@@ -44,7 +44,7 @@ const Projet = () => {
         <Card
           title="Marathon Web"
           description="Un site presque fonctionnel créé en 24h qui permet la lecture d'histoires dont vous êtes le héros"
-          imageUrl="/ScreenMarathonWeb.png"
+          imageUrl="/projet/ScreenMarathonWeb.png"
           altText="Capture de la page d'accueil"
           href="./projet/marathon_web"
           tag="Laravel"

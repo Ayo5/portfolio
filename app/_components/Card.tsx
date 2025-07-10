@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 interface CardProps {
@@ -27,6 +28,7 @@ const Card: React.FC<CardProps> = ({
                 height={400}
                 objectFit="cover"
                 quality={100}
+                onError={(e) => { console.log("Image failed to load:", e, imageUrl); }}
             />
             <div className="px-6 py-4">
                 <a href={href} rel="noopener noreferrer">
