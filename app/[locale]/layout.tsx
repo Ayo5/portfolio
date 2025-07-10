@@ -5,9 +5,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import "./globals.css";
 
-// Métadonnées de la page
+
 export const metadata: Metadata = {
-  title: "Abdelkader Ayoub Daï | Développeur Apprenti",
+  title: "Abdelkader Ayoub Daï | Portfolio",
   description: "Portfolio d'Abdelkader Ayoub Daï réalisé grâce à Next.js",
 };
 
