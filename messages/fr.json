@@ -1,10 +1,13 @@
 {
   "home": {
     "title": "Accueil",
-    "welcome": "Bienvenue sur mon portfolio"
+    "welcome": "Bienvenue sur mon portfolio", 
+    "subtitle": "Développeur junior et créatif",
+    "project" : "Projets", 
+    "about": "À propos"
   },
   "about": {
-    "title": "À propos de moi"
+    "title": "À propos"
   },
   "projects": {
     "title": "Projets"

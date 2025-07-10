@@ -1,13 +1,12 @@
-"use client";
-
 import { Section } from "@/app/_components/Section";
 import { Button } from "@/components/ui/button";
-import { useLocale } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export const HostPage = () => {
-  // Récupérer la locale actuelle pour créer des liens corrects
-  const locale = useLocale();
+export const HostPage = async () => {
+
+  const locale = await getLocale();
+  const t = await getTranslations("home");
 
   return (
     <Section className='flex flex-col items-center justify-center min-h-screen bg-cover bg-center'>
@@ -15,24 +14,22 @@ export const HostPage = () => {
       <div className='mb-5 space-x-1'>
         <Link href={`/${locale}/projet`}>
           <Button className='p-2 font-sans text-gray-400 hover:text-white transition duration-300'>
-            projet
+            {t("project")}
           </Button>
         </Link>
         <Link href={`/${locale}/about`}>
           <Button className='p-2 font-sans text-gray-400 hover:text-white transition duration-300'>
-            à propos
+            {t("about")}
           </Button>
         </Link>
       </div>
 
-      {/* Title with typing animation */}
       <h1 className='sm:text-xl lg:text-8xl  font-bold text-center text-white border-r-2 border-white whitespace-nowrap overflow-hidden animate-typing animate-blink-caret'>
         Abdelkader Daï
       </h1>
 
-      {/* Text below the title */}
       <p className='text-xs sm:text-sm md:text-base lg:text-lg mt-5 text-center text-gray-300'>
-        Développeur junior et créatif
+        {t("subtitle")}
       </p>
 
       <style>{`
