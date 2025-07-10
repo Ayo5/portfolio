@@ -1,8 +1,8 @@
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
 import "./globals.css";
 
 // Métadonnées de la page
@@ -30,6 +30,7 @@ export default async function RootLayout({
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
     notFound();
+    console.error("Error loading messages:", error);
   }
 
   return (
