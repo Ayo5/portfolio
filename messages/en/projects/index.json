@@ -1,3 +1,39 @@
  {
-    "title": "Projects"
-  }
+    "title": "Projects",
+    "marathonWeb": {
+    "title": "Marathon Web",
+    "presentation": "Marathon Web is a project developed during a 24-hour hackathon as part of my Computer Science degree. The goal was to build a web platform allowing users to read interactive stories with multiple choices, in the style of 'choose-your-own-adventure' books. This intense challenge highlighted our ability to design a complete and interactive site in a very short timeframe.",
+    "imageAlt": "Screenshot of the Marathon Web homepage",
+    "imageCaption": "User interface of the Marathon Web platform",
+    "objectif": [
+      "Develop a web platform in just 24 hours",
+      "Enable interactive reading of branching stories",
+      "Ensure smooth and intuitive navigation",
+      "Design a responsive layout for all devices"
+    ],
+    "tech": {
+      "framework": "Laravel",
+      "frontend": "HTML, CSS, JavaScript, Blade",
+      "database": "MySQL",
+      "tools": "Git, Composer"
+    },
+    "features": [
+      "Interactive story system with branching paths",
+      "Navigation through different parts of a story",
+      "Choice tracking and save system",
+      "User account creation",
+      "Clear and accessible reading interface",
+      "Categorization of available stories",
+      "Responsive design for desktop, tablet, and mobile"
+    ],
+    "architecture": {
+      "description": "The project follows Laravel's MVC architecture:",
+      "Model": "Management of stories, users, and saves",
+      "View": "Blade templates for dynamic display",
+      "Controller": "Logic for processing choices and navigation",
+      "Routes": "Navigation through story parts"
+    },
+    "challenges": "The main challenge was to develop a complete and coherent project in just 24 hours. We had to quickly design a data structure suited to interactive stories, while ensuring a pleasant user experience and maintainable code.",
+    "future": "The project could be improved by adding a story editor for authors, a community rating system, or social features (comments, sharing). Rewriting it as a SPA using Vue or React would also improve performance and UX."
+    }
+}

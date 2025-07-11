@@ -1,3 +1,39 @@
  {
-    "title": "Projets"
+    "title": "Projets",
+      "marathonWeb": {
+        "title": "Marathon Web",
+        "presentation": "Marathon Web est un projet réalisé lors d’un hackathon de 24 heures dans le cadre de mon BUT Informatique. L’objectif était de développer une plateforme web permettant aux utilisateurs de lire des histoires interactives à choix multiples, façon “livres dont vous êtes le héros”. Ce défi intensif a mis en avant notre capacité à concevoir un site complet et interactif dans un délai très court.",
+        "imageAlt": "Capture de la page d'accueil du Marathon Web",
+        "imageCaption": "Interface utilisateur du site Marathon Web",
+        "objectif": [
+          "Développer une plateforme web en seulement 24 heures",
+          "Permettre une lecture interactive d'histoires à choix multiples",
+          "Garantir une navigation fluide et intuitive",
+          "Concevoir un design responsive adapté à tous les supports"
+        ],
+        "tech": {
+          "framework": "Laravel",
+          "frontend": "HTML, CSS, JavaScript, Blade",
+          "database": "MySQL",
+          "tools": "Git, Composer"
+        },
+        "fonctionnalites": [
+          "Système d’histoires interactives avec embranchements",
+          "Navigation entre les différentes parties d’une histoire",
+          "Suivi des choix et sauvegarde de progression",
+          "Création de compte utilisateur",
+          "Interface de lecture claire et accessible",
+          "Catégorisation des histoires disponibles",
+          "Design responsive pour ordinateurs, tablettes et smartphones"
+        ],
+        "architecture": {
+          "description": "Le projet suit l’architecture MVC proposée par Laravel :",
+          "Modèle": "Gestion des histoires, utilisateurs, sauvegardes",
+          "Vue": "Templates Blade pour l'affichage dynamique",
+          "Contrôleur": "Logique de traitement des choix et navigation",
+          "Routes": "Navigation dans les différentes parties de l'histoire"
+        },
+        "defis": "Le principal défi était de développer un projet complet et cohérent en seulement 24 heures. Il a fallu concevoir rapidement une structure de données adaptée aux histoires interactives, tout en assurant une expérience utilisateur agréable et un code maintenable.",
+        "perspectives": "Le projet pourrait être enrichi par un éditeur d’histoires accessible aux auteurs, une notation communautaire, ou encore des fonctionnalités sociales (commentaires, partages). Une refonte en SPA avec Vue ou React améliorerait également les performances et l’UX."
+      }
   }
