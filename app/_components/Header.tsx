@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { DownloadIcon } from "lucide-react";
+import { DownloadIcon } from "./icons/DownloadIcon";
 import { GitHubIcon } from "./icons/GitHubIcon";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
 import { LanguageSelector } from "./LanguageSelector";
@@ -16,7 +16,7 @@ export const Header = async () => {
           <LinkedInIcon />
         </Button>
         <Button className="p-2 text-gray-600 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition duration-300">
-          <DownloadIcon />
+          <DownloadIcon size={36} />
         </Button>
         <ThemeToggle />
         <LanguageSelector />

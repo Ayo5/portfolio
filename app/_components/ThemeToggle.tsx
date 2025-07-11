@@ -22,7 +22,7 @@ export default function ThemeToggle() {
 
     return (
         <button onClick={toggleTheme}>
-            {darkMode ? <SunIcon /> : <MoonIcon />}
+            {darkMode ? <SunIcon className='text-gray-600 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition duration-300' /> : <MoonIcon className='text-gray-600 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition duration-300' />}
         </button>
     )
 }
