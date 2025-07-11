@@ -19,17 +19,20 @@ const Card: React.FC<CardProps> = ({
     tag,
 }) => {
     return (
-        <div className="max-w-md rounded-3xl border border-border bg-card text-card-foreground overflow-hidden dark:hover:shadow-white/20 shadow-md hover:shadow-lg  transition-shadow duration-300">
-            <Image
-                className="w-full h-auto"
-                src={imageUrl}
-                alt={altText}
-                width={300}
-                height={400}
-                objectFit="cover"
-                quality={100}
-                onError={(e) => { console.log("Image failed to load:", e, imageUrl); }}
-            />
+        <div className="max-w-md rounded-3xl border border-border bg-card text-card-foreground overflow-hidden dark:hover:shadow-white/20 shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="relative w-full h-48 overflow-hidden">
+                <Image
+                    className="object-cover"
+                    src={imageUrl}
+                    alt={altText}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={100}
+                    onError={(e) => {
+                        console.log("Image failed to load:", e, imageUrl);
+                    }}
+                />
+            </div>
             <div className="px-6 py-4">
                 <a href={href} rel="noopener noreferrer">
                     <h2 className="font-bold text-xl mb-2 hover:underline">{title}</h2>

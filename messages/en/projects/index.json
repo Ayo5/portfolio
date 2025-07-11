@@ -1,15 +1,184 @@
- {
-    "title": "Projects",
-    "marathonWeb": {
+{
+  "title": "Projects",
+  "presentation": "Project Presentation",
+  "objectif": "Project Objectives",
+  "tech": "Technologies Used",
+  "features": "Implemented Features",
+  "architecture": "Project Architecture",
+  "challenges": "Technical Challenges Faced",
+  "future": "Improvement Perspectives",
+  "links": "Links and Resources",
+  "imageCaption": "User interface of the Marathon Web platform",
+
+  "rayTracer": {
+    "title": "Ray Tracer",
+    "description": "Software that simulates the behavior of light on 3D objects.",
+    "presentation": "This is a group project carried out as part of my 2nd year Computer Science degree. The Ray Tracer is a Java application that simulates the behavior of light on various 3D objects. This project implements fundamental computer graphics principles to create realistic renders by calculating the path of light rays in a virtual scene.",
+    "imageAlt": "Render of a reflective sphere with global illumination",
+    "imageCaption": "Render of a reflective sphere with global illumination",
+    "objectif": [
+      "Implement a 3D rendering engine based on ray tracing technique",
+      "Simulate physical interactions of light with different surfaces",
+      "Generate photorealistic images with shadows, reflections, and refractions",
+      "Understand and apply advanced mathematical concepts in 3D computer graphics"
+    ],
+    "tech": {
+      "language": "Language:",
+      "ide": "Development Environment:",
+      "libraries": "Libraries:",
+      "fromScratch": "Java (From Scratch)",
+      "mathMethods": "Mathematical Methods:",
+      "mathDetails": "Linear algebra, vector calculus, intersection algorithms"
+    },
+    "features": [
+      "Intersection calculation between rays and geometric objects",
+      "Simulation of diffuse and specular lighting",
+      "Handling of shadows and occlusions",
+      "Implementation of reflections on metallic surfaces",
+      "Calculation of refraction in transparent materials",
+      "Anti-aliasing to improve render quality",
+      "Support for various object types (spheres, planes, triangles)",
+      "Image generation in standard formats"
+    ],
+    "architecture": {
+      "description": "The project is structured around the main components of ray tracing:",
+      "ray": {
+        "title": "Ray:",
+        "description": "Class representing a light ray with origin and direction"
+      },
+      "scene": {
+        "title": "Scene:",
+        "description": "Container for 3D objects and light sources"
+      },
+      "camera": {
+        "title": "Camera:",
+        "description": "Viewpoint and rendering parameters"
+      },
+      "materials": {
+        "title": "Materials:",
+        "description": "Physical properties of surfaces (color, reflectivity, transparency)"
+      },
+      "renderer": {
+        "title": "Renderer:",
+        "description": "Main calculation engine managing the ray tracing"
+      }
+    },
+    "challenges": "The main technical challenges included optimizing intersection calculations for better performance, precise handling of light physics equations, and correct implementation of reflection and refraction algorithms.",
+    "future": "To improve the project, support for textures could be added, optimization techniques such as spatial structures (BVH, octrees) could be implemented, and a graphical interface could be developed for interactive scene configuration.",
+    "links": {
+      "github": "GitHub source code"
+    }
+  },
+
+  "apiBoardGame": {
+    "title": "API Board Game",
+    "description": "API Board Game is a website that uses an API to manage a board games database.",
+    "presentation": "This project was developed as part of my Computer Science degree. API Board Game is a website using an API defined by our team that manages the board games database through CRUD (Create, Read, Update, Delete) methods. This project helped us understand the fundamental principles of REST API design and database management.",
+    "imageAlt": "Screenshot of the API Board Game homepage",
+    "imageCaption": "User interface of the API Board Game website",
+    "objectif": [
+      "Design and develop a functional REST API",
+      "Create an intuitive user interface to interact with the API",
+      "Implement CRUD operations for board games management",
+      "Provide clear documentation for API usage",
+      "Ensure data security and system reliability"
+    ],
+    "tech": {
+      "backend": "Backend:",
+      "frontend": "Frontend:",
+      "database": "Database:",
+      "tools": "Tools:",
+      "methodology": "Methodology:",
+      "restful": "RESTful design"
+    },
+    "features": [
+      "Adding new board games to the database",
+      "Browsing the complete list of available games",
+      "Searching games by various criteria (name, category, etc.)",
+      "Editing information of existing games",
+      "Deleting entries from the database",
+      "User authentication for sensitive operations",
+      "Interactive API documentation",
+      "Responsive user interface for all devices"
+    ],
+    "architecture": {
+      "description": "The project follows the MVC (Model-View-Controller) pattern:",
+      "model": {
+        "title": "Model:",
+        "description": "Manages database access and business logic"
+      },
+      "view": {
+        "title": "View:",
+        "description": "User interface to interact with the API"
+      },
+      "controller": {
+        "title": "Controller:",
+        "description": "Handles HTTP requests and communication between model and view"
+      }
+    },
+    "challenges": "One major challenge was implementing a secure API while ensuring a good user experience. Error handling and data validation also required special attention.",
+    "future": "Further improvements could include advanced authentication, a richer React-based interface, and online multiplayer game management.",
+    "links": {
+      "github": "GitHub source code"
+    }
+  },
+
+  "huawei": {
+    "title": "Huawei Competition",
+    "description": "Participation in the Huawei ICT 2023 competition, where we developed a real-time data management project for businesses.",
+    "altText": "Huawei logo"
+  },
+
+  "pokeDex": {
+    "title": "Pokédex with Flask",
+    "description": "This project is a web application that allows users to search Pokémon via the PokéAPI.",
+    "altText": "PokeDex",
+    "presentation": "This project is a web application that allows searching Pokémon via the PokéAPI.",
+    "imageCaption": "Pokédex",
+    "objectif": {
+      "0": "Learn to interact with an external REST API",
+      "1": "Handle Flask and the structure of a Python project",
+      "2": "Set up a simple user interface"
+    },
+    "features": {
+      "0": "Search Pokémon by name or ID",
+      "1": "Display detailed information (type, weight, height, etc.)",
+      "2": "Navigate between Pokémon",
+      "3": "Display an image of the Pokémon"
+    },
+    "architecture": {
+      "description": "The application uses Flask backend to manage routes and API calls.",
+      "api": {
+        "title": "PokéAPI",
+        "description": "provides all the data about Pokémon."
+      },
+      "routes": {
+        "title": "Flask Routes",
+        "description": "manage the application logic."
+      },
+      "templates": {
+        "title": "HTML Templates",
+        "description": "allow dynamic data display."
+      }
+    },
+    "challenges": "Understanding the PokéAPI data structure and adapting it for a simple and responsive display.",
+    "future": "Add a favorites feature and a database to save searches.",
+    "links": {
+      "github": "View GitHub repository"
+    }
+  },
+
+  "marathonWeb": {
     "title": "Marathon Web",
-    "presentation": "Marathon Web is a project developed during a 24-hour hackathon as part of my Computer Science degree. The goal was to build a web platform allowing users to read interactive stories with multiple choices, in the style of 'choose-your-own-adventure' books. This intense challenge highlighted our ability to design a complete and interactive site in a very short timeframe.",
-    "imageAlt": "Screenshot of the Marathon Web homepage",
+    "presentation": "Marathon Web is a project carried out during a 24-hour hackathon as part of my Computer Science degree. The goal was to create a web platform allowing users to read interactive multiple-choice stories, in the style of 'choose your own adventure' books. This intense challenge highlighted our ability to design a complete and interactive site within a very short timeframe.",
+    "description": "Marathon Web is a web platform for reading interactive multiple-choice stories.",
+    "imageAlt": "Screenshot of Marathon Web homepage",
     "imageCaption": "User interface of the Marathon Web platform",
     "objectif": [
       "Develop a web platform in just 24 hours",
       "Enable interactive reading of branching stories",
       "Ensure smooth and intuitive navigation",
-      "Design a responsive layout for all devices"
+      "Design a responsive layout adapted for all devices"
     ],
     "tech": {
       "framework": "Laravel",
@@ -19,21 +188,36 @@
     },
     "features": [
       "Interactive story system with branching paths",
-      "Navigation through different parts of a story",
+      "Navigation between different parts of a story",
       "Choice tracking and save system",
       "User account creation",
       "Clear and accessible reading interface",
       "Categorization of available stories",
-      "Responsive design for desktop, tablet, and mobile"
+      "Responsive design for desktops, tablets, and smartphones"
     ],
     "architecture": {
-      "description": "The project follows Laravel's MVC architecture:",
-      "Model": "Management of stories, users, and saves",
-      "View": "Blade templates for dynamic display",
-      "Controller": "Logic for processing choices and navigation",
-      "Routes": "Navigation through story parts"
+      "description": "The project follows Laravel’s MVC architecture:",
+      "model": {
+        "title": "Model",
+        "description": "Manages stories, users, and saves"
+      },
+      "view": {
+        "title": "View",
+        "description": "Blade templates for dynamic display"
+      },
+      "controller": {
+        "title": "Controller",
+        "description": "Handles choice processing and navigation logic"
+      },
+      "routes": {
+        "title": "Routes",
+        "description": "Navigation between story parts"
+      }
     },
-    "challenges": "The main challenge was to develop a complete and coherent project in just 24 hours. We had to quickly design a data structure suited to interactive stories, while ensuring a pleasant user experience and maintainable code.",
-    "future": "The project could be improved by adding a story editor for authors, a community rating system, or social features (comments, sharing). Rewriting it as a SPA using Vue or React would also improve performance and UX."
+    "challenges": "The main challenge was developing a complete and coherent project in only 24 hours. We had to quickly design a suitable data structure for interactive stories, while ensuring a pleasant user experience and maintainable code.",
+    "future": "The project could be improved by adding a story editor for authors, a community rating system, or social features (comments, sharing). Rewriting as a SPA with Vue or React would also enhance performance and user experience.",
+    "links": {
+      "github": "GitHub source code"
     }
+  }
 }

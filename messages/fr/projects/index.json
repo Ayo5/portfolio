@@ -1,39 +1,223 @@
- {
-    "title": "Projets",
-      "marathonWeb": {
-        "title": "Marathon Web",
-        "presentation": "Marathon Web est un projet réalisé lors d’un hackathon de 24 heures dans le cadre de mon BUT Informatique. L’objectif était de développer une plateforme web permettant aux utilisateurs de lire des histoires interactives à choix multiples, façon “livres dont vous êtes le héros”. Ce défi intensif a mis en avant notre capacité à concevoir un site complet et interactif dans un délai très court.",
-        "imageAlt": "Capture de la page d'accueil du Marathon Web",
-        "imageCaption": "Interface utilisateur du site Marathon Web",
-        "objectif": [
-          "Développer une plateforme web en seulement 24 heures",
-          "Permettre une lecture interactive d'histoires à choix multiples",
-          "Garantir une navigation fluide et intuitive",
-          "Concevoir un design responsive adapté à tous les supports"
-        ],
-        "tech": {
-          "framework": "Laravel",
-          "frontend": "HTML, CSS, JavaScript, Blade",
-          "database": "MySQL",
-          "tools": "Git, Composer"
-        },
-        "fonctionnalites": [
-          "Système d’histoires interactives avec embranchements",
-          "Navigation entre les différentes parties d’une histoire",
-          "Suivi des choix et sauvegarde de progression",
-          "Création de compte utilisateur",
-          "Interface de lecture claire et accessible",
-          "Catégorisation des histoires disponibles",
-          "Design responsive pour ordinateurs, tablettes et smartphones"
-        ],
-        "architecture": {
-          "description": "Le projet suit l’architecture MVC proposée par Laravel :",
-          "Modèle": "Gestion des histoires, utilisateurs, sauvegardes",
-          "Vue": "Templates Blade pour l'affichage dynamique",
-          "Contrôleur": "Logique de traitement des choix et navigation",
-          "Routes": "Navigation dans les différentes parties de l'histoire"
-        },
-        "defis": "Le principal défi était de développer un projet complet et cohérent en seulement 24 heures. Il a fallu concevoir rapidement une structure de données adaptée aux histoires interactives, tout en assurant une expérience utilisateur agréable et un code maintenable.",
-        "perspectives": "Le projet pourrait être enrichi par un éditeur d’histoires accessible aux auteurs, une notation communautaire, ou encore des fonctionnalités sociales (commentaires, partages). Une refonte en SPA avec Vue ou React améliorerait également les performances et l’UX."
+{
+  "title": "Projets",
+  "presentation": "Présentation du projet",
+  "objectif": "Objectifs du projet",
+  "tech": "Technologies utilisées",
+  "features": "Fonctionnalités implémentées",
+  "architecture": "Architecture du projet",
+  "challenges": "Défis techniques rencontrés",
+  "future": "Perspectives d'amélioration",
+  "links": "Liens et ressources",
+  "imageCaption": "Interface utilisateur de la plateforme Marathon Web",
+
+  "rayTracer": {
+    "title": "Ray Tracer",
+    "description": "Logiciel qui simule le comportement de la lumière sur des objets 3D.",
+    "presentation": "Il s'agit d'un projet de groupe réalisé dans le cadre de mon BUT Informatique en 2ème année. Le Ray Tracer est une application développée en Java qui simule le comportement de la lumière sur différents objets 3D. Ce projet implémente les principes fondamentaux de l'infographie pour créer des rendus réalistes en calculant la trajectoire des rayons lumineux dans une scène virtuelle.",
+    "imageAlt": "Rendu d'une sphère réfléchissante avec illumination globale",
+    "imageCaption": "Rendu d'une sphère réfléchissante avec illumination globale",
+    "objectif": [
+      "Implémenter un moteur de rendu 3D basé sur la technique du ray tracing",
+      "Simuler les interactions physiques de la lumière avec différentes surfaces",
+      "Générer des images photoréalistes avec gestion des ombres, réflexions et réfractions",
+      "Comprendre et appliquer les concepts mathématiques avancés en infographie 3D"
+    ],
+    "tech": {
+      "language": "Langage :",
+      "ide": "Environnement de développement :",
+      "libraries": "Bibliothèques :",
+      "fromScratch": "Java (From Scratch)",
+      "mathMethods": "Méthodes mathématiques :",
+      "mathDetails": "Algèbre linéaire, calcul vectoriel, algorithmes d'intersection"
+    },
+    "features": [
+      "Calcul d'intersection entre rayons et objets géométriques",
+      "Simulation de l'éclairage diffus et spéculaire",
+      "Gestion des ombres portées et des occultations",
+      "Implémentation de la réflexion sur surfaces métalliques",
+      "Calcul de la réfraction dans les matériaux transparents",
+      "Anti-aliasing pour améliorer la qualité des rendus",
+      "Support de différents types d'objets (sphères, plans, triangles)",
+      "Génération d'images en format standard"
+    ],
+    "architecture": {
+      "description": "Le projet est structuré autour des composants principaux du ray tracing :",
+      "ray": {
+        "title": "Ray :",
+        "description": "Classe représentant un rayon lumineux avec origine et direction"
+      },
+      "scene": {
+        "title": "Scene :",
+        "description": "Conteneur des objets 3D et des sources lumineuses"
+      },
+      "camera": {
+        "title": "Camera :",
+        "description": "Point de vue et paramètres de rendu"
+      },
+      "materials": {
+        "title": "Materials :",
+        "description": "Propriétés physiques des surfaces (couleur, réflectivité, transparence)"
+      },
+      "renderer": {
+        "title": "Renderer :",
+        "description": "Moteur de calcul principal gérant le lancer de rayons"
       }
+    },
+    "challenges": "Les principaux défis techniques incluaient l'optimisation des calculs d'intersection pour améliorer les performances, la gestion précise des équations de la physique de la lumière, et l'implémentation correcte des algorithmes de réflexion et réfraction.",
+    "future": "Pour améliorer le projet, on pourrait ajouter le support de textures, implémenter des techniques d'optimisation comme les structures spatiales (BVH, octrees), et développer une interface graphique pour configurer les scènes interactivement.",
+    "links": {
+      "github": "Code source GitHub"
+    }
+  },
+
+  "apiBoardGame": {
+    "title": "API Board Game",
+    "description": "API Board Game est un site web qui utilise une API pour gérer la base de données des jeux de plateau.",
+    "presentation": "Il s'agit d'un projet développé dans le cadre de mon BUT Informatique. API Board Game est un site web qui utilise une API définie par notre équipe qui permet de gérer la base de données des jeux de plateau à travers les méthodes CRUD (Create, Read, Update, Delete). Ce projet nous a permis de comprendre les principes fondamentaux de la conception d'API REST et de la gestion de bases de données.",
+    "imageAlt": "Capture de la page d'accueil du site API Board Game",
+    "imageCaption": "Interface utilisateur du site API Board Game",
+    "objectif": [
+      "Concevoir et développer une API REST fonctionnelle",
+      "Créer une interface utilisateur intuitive pour interagir avec l'API",
+      "Implémenter les opérations CRUD pour la gestion des jeux de plateau",
+      "Mettre en place une documentation claire pour l'utilisation de l'API",
+      "Assurer la sécurité des données et la fiabilité du système"
+    ],
+    "tech": {
+      "backend": "Backend :",
+      "frontend": "Frontend :",
+      "database": "Base de données :",
+      "tools": "Outils :",
+      "methodology": "Méthodologie :",
+      "restful": "Conception RESTful"
+    },
+    "features": [
+      "Ajout de nouveaux jeux de plateau à la base de données",
+      "Consultation de la liste complète des jeux disponibles",
+      "Recherche de jeux par différents critères (nom, catégorie, etc.)",
+      "Modification des informations sur les jeux existants",
+      "Suppression des entrées de la base de données",
+      "Authentification des utilisateurs pour les opérations sensibles",
+      "Documentation interactive de l'API",
+      "Interface utilisateur responsive pour tous les appareils"
+    ],
+    "architecture": {
+      "description": "Le projet est structuré selon le modèle MVC (Modèle-Vue-Contrôleur) :",
+      "model": {
+        "title": "Modèle :",
+        "description": "Gestion des accès à la base de données et logique métier"
+      },
+      "view": {
+        "title": "Vue :",
+        "description": "Interface utilisateur pour interagir avec l'API"
+      },
+      "controller": {
+        "title": "Contrôleur :",
+        "description": "Gestion des requêtes HTTP et communication entre modèle et vue"
+      }
+    },
+    "challenges": "Un des principaux défis était d'implémenter une API sécurisée tout en assurant une bonne expérience utilisateur. La gestion des erreurs et la validation des données ont également demandé une attention particulière.",
+    "future": "Pour aller plus loin, on pourrait ajouter une authentification avancée, une interface plus riche avec React, et une gestion des parties en ligne entre utilisateurs.",
+    "links": {
+      "github": "Code source GitHub"
+    }
+  },
+
+  "huawei": {
+    "title": "Compétition Huawei",
+    "description": "Participation à la compétition Huawei ICT 2023, où nous avons développé un projet de gestion de données en temps réel pour les entreprises.",
+    "altText": "Logo Huawei"
+  },
+
+  "pokeDex": {
+    "title": "Pokédex avec Flask",
+    "description": "Ce projet est une application web qui permet aux utilisateurs de rechercher des Pokémon via la PokéAPI.",
+    "altText": "PokeDex",
+    "presentation": "Ce projet est une application web qui permet de rechercher des Pokémon via la PokéAPI.",
+    "imageCaption": "Pokédex",
+    "objectif": {
+      "0": "Apprendre à interagir avec une API REST externe",
+      "1": "Manipuler Flask et la structure d’un projet Python",
+      "2": "Mettre en place une interface utilisateur simple"
+    },
+    "features": {
+      "0": "Recherche de Pokémon par nom ou identifiant",
+      "1": "Affichage d’informations détaillées (type, poids, taille, etc.)",
+      "2": "Navigation entre les Pokémon",
+      "3": "Affichage d'une image du Pokémon"
+    },
+    "architecture": {
+      "description": "L'application utilise Flask côté backend pour gérer les routes et les appels à l'API.",
+      "api": {
+        "title": "PokéAPI",
+        "description": "fournit toutes les données sur les Pokémon."
+      },
+      "routes": {
+        "title": "Routes Flask",
+        "description": "gèrent la logique de l'application."
+      },
+      "templates": {
+        "title": "Templates HTML",
+        "description": "permettent l’affichage dynamique des données."
+      }
+    },
+    "challenges": "Comprendre la structure des données de la PokéAPI et les adapter à un affichage simple et responsive.",
+    "future": "Ajouter une fonctionnalité de favoris et une base de données pour sauvegarder les recherches.",
+    "links": {
+      "github": "Voir le dépôt GitHub"
+    }
+  },
+
+  "marathonWeb": {
+    "title": "Marathon Web",
+    "presentation": "Marathon Web est un projet réalisé lors d’un hackathon de 24 heures dans le cadre de mon diplôme en Informatique. L’objectif était de créer une plateforme web permettant aux utilisateurs de lire des histoires interactives à choix multiples, dans le style des livres « dont vous êtes le héros ». Ce défi intense a mis en avant notre capacité à concevoir un site complet et interactif dans un délai très court.",
+    "description": "Marathon Web est une plateforme web permettant de lire des histoires interactives à choix multiples.",
+    "imageAlt": "Capture d’écran de la page d’accueil de Marathon Web",
+    "imageCaption": "Interface utilisateur de la plateforme Marathon Web",
+    "objectif": [
+      "Développer une plateforme web en seulement 24 heures",
+      "Permettre la lecture interactive d’histoires à embranchements",
+      "Garantir une navigation fluide et intuitive",
+      "Concevoir une mise en page responsive adaptée à tous les appareils"
+    ],
+    "tech": {
+      "framework": "Laravel",
+      "frontend": "HTML, CSS, JavaScript, Blade",
+      "database": "MySQL",
+      "tools": "Git, Composer"
+    },
+    "features": [
+      "Système d’histoires interactives avec embranchements",
+      "Navigation entre les différentes parties d’une histoire",
+      "Suivi des choix et système de sauvegarde",
+      "Création de comptes utilisateurs",
+      "Interface de lecture claire et accessible",
+      "Catégorisation des histoires disponibles",
+      "Design responsive pour ordinateurs, tablettes et smartphones"
+    ],
+    "architecture": {
+      "description": "Le projet suit l’architecture MVC proposée par Laravel :",
+      "model": {
+        "title": "Modèle",
+        "description": "Gestion des histoires, des utilisateurs et des sauvegardes"
+      },
+      "view": {
+        "title": "Vue",
+        "description": "Templates Blade pour l’affichage dynamique"
+      },
+      "controller": {
+        "title": "Contrôleur",
+        "description": "Logique de traitement des choix et de la navigation"
+      },
+      "routes": {
+        "title": "Routes",
+        "description": "Navigation entre les différentes parties de l’histoire"
+      }
+    },
+    "challenges": "Le principal défi était de développer un projet complet et cohérent en seulement 24 heures. Il a fallu concevoir rapidement une structure de données adaptée aux histoires interactives, tout en assurant une expérience utilisateur agréable et un code maintenable.",
+    "future": "Le projet pourrait être amélioré en ajoutant un éditeur d’histoires destiné aux auteurs, un système de notation communautaire, ou des fonctionnalités sociales (commentaires, partages). Une réécriture en SPA avec Vue ou React améliorerait également les performances et l’expérience utilisateur.",
+    "links": {
+      "github": "Code source GitHub"
+    }
   }
+}

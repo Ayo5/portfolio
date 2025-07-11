@@ -1,5 +1,6 @@
 import { Header } from "@/app/_components/Header";
 import NavBar from "@/app/_components/NavBar";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
@@ -40,6 +41,8 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
     headingClassName = "text-2xl font-semibold mb-4 text-gray-900 dark:text-white",
     textClassName = "mb-4 text-gray-700 dark:text-gray-300",
 }) => {
+
+    const t = useTranslations("projects");
     return (
         <>
             <Header />
@@ -51,7 +54,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
                     </h1>
 
                     <div className={cardClassName}>
-                        <h2 className={headingClassName}>Présentation du projet</h2>
+                        <h2 className={headingClassName}>{t("presentation")}</h2>
                         <div className={textClassName}>{presentation}</div>
 
                         <div className="flex justify-center my-6">
@@ -73,45 +76,45 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div className={cardClassName}>
-                            <h2 className={headingClassName}>Objectifs du projet</h2>
+                            <h2 className={headingClassName}>{t("objectif")}</h2>
                             <div className={textClassName}>{objectifs}</div>
                         </div>
 
                         <div className={cardClassName}>
-                            <h2 className={headingClassName}>Technologies utilisées</h2>
+                            <h2 className={headingClassName}>{t("tech")}</h2>
                             <div className={textClassName}>{technologies}</div>
                         </div>
                     </div>
 
                     <div className={cardClassName}>
-                        <h2 className={headingClassName}>Fonctionnalités implémentées</h2>
+                        <h2 className={headingClassName}>{t("features")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {fonctionnalites}
                         </div>
                     </div>
 
                     <div className={cardClassName}>
-                        <h2 className={headingClassName}>Architecture du projet</h2>
+                        <h2 className={headingClassName}>{t("architecture")}</h2>
                         <div className={textClassName}>{architecture}</div>
                     </div>
 
                     {defis && (
                         <div className={cardClassName}>
-                            <h2 className={headingClassName}>Défis techniques relevés</h2>
+                            <h2 className={headingClassName}>{t("challenges")}</h2>
                             <div className={textClassName}>{defis}</div>
                         </div>
                     )}
 
                     {perspectives && (
                         <div className={cardClassName}>
-                            <h2 className={headingClassName}>Perspectives d&apos;amélioration</h2>
+                            <h2 className={headingClassName}>{t("future")}</h2>
                             <div className={textClassName}>{perspectives}</div>
                         </div>
                     )}
 
                     {liens && (
                         <div className={cardClassName}>
-                            <h2 className={headingClassName}>Liens et ressources</h2>
+                            <h2 className={headingClassName}>{t("links")}</h2>
                             {liens}
                         </div>
                     )}

@@ -17,7 +17,7 @@ const MarathonWebPage: React.FC = () => {
       }
       imageSrc="/projet/ScreenMarathonWeb.png"
       imageAlt="Capture de la page d'accueil du Marathon Web"
-      imageCaption="Interface utilisateur du site Marathon Web"
+      imageCaption={t("imageCaption")}
       objectifs={
         <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
           <li>{t("objectif.0")}</li>
@@ -37,46 +37,42 @@ const MarathonWebPage: React.FC = () => {
       fonctionnalites={
         <>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-            <li>Système d’histoires interactives avec embranchements</li>
-            <li>Navigation entre les différentes parties d’une histoire</li>
-            <li>Suivi des choix et sauvegarde de progression</li>
-            <li>Création de compte utilisateur</li>
+            <li>{t("features.0")}</li>
+            <li>{t("features.1")}</li>
+            <li>{t("features.2")}</li>
+            <li>{t("features.3")}</li>
           </ul>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-            <li>Interface de lecture claire et accessible</li>
-            <li>Catégorisation des histoires disponibles</li>
-            <li>Design responsive pour ordinateurs, tablettes et smartphones</li>
+            <li>{t("features.4")}</li>
+            <li>{t("features.5")}</li>
+            <li>{t("features.6")}</li>
           </ul>
         </>
       }
       architecture={
         <>
           <p className="mb-4 text-gray-700 dark:text-gray-300">
-            Le projet suit l’architecture MVC proposée par Laravel :
+            {t("architecture.description")}
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-            <li><span className="font-medium text-gray-900 dark:text-white">Modèle :</span> Gestion des histoires, utilisateurs, sauvegardes</li>
-            <li><span className="font-medium text-gray-900 dark:text-white">Vue :</span> Templates Blade pour l&apos;affichage dynamique</li>
-            <li><span className="font-medium text-gray-900 dark:text-white">Contrôleur :</span> Logique de traitement des choix et navigation</li>
-            <li><span className="font-medium text-gray-900 dark:text-white">Routes :</span> Navigation dans les différentes parties de l&apos;histoire</li>
+            <li><span className="font-medium text-gray-900 dark:text-white">{t("architecture.model.title")}</span> {t("architecture.model.description")}</li>
+            <li><span className="font-medium text-gray-900 dark:text-white">{t("architecture.view.title")}</span> {t("architecture.view.description")}</li>
+            <li><span className="font-medium text-gray-900 dark:text-white">{t("architecture.controller.title")}</span> {t("architecture.controller.description")}</li>
+            <li><span className="font-medium text-gray-900 dark:text-white">{t("architecture.routes.title")}</span> {t("architecture.routes.description")}</li>
           </ul>
         </>
       }
       defis={
         <>
           <p className="mb-4 text-gray-700 dark:text-gray-300">
-            Le principal défi était de développer un projet complet et cohérent en seulement 24 heures.
-            Il a fallu concevoir rapidement une structure de données adaptée aux histoires interactives,
-            tout en assurant une expérience utilisateur agréable et un code maintenable.
+            {t("challenges")}
           </p>
         </>
       }
       perspectives={
         <>
           <p className="mb-4 text-gray-700 dark:text-gray-300">
-            Le projet pourrait être enrichi par un éditeur d’histoires accessible aux auteurs,
-            une notation communautaire, ou encore des fonctionnalités sociales (commentaires, partages).
-            Une refonte en SPA avec Vue ou React améliorerait également les performances et l’UX.
+            {t("future")}
           </p>
         </>
       }
@@ -84,8 +80,8 @@ const MarathonWebPage: React.FC = () => {
         <>
           <ul className="list-disc pl-6 space-y-2 text-blue-700 dark:text-blue-400">
             <li>
-              <Link href="https://github.com/Ayo5/MarathonWeb" target="_blank" className="underline hover:text-blue-900 dark:hover:text-blue-200">
-                Code source GitHub
+              <Link href="https://github.com/Ayo5/Marathon_du_web" target="_blank" className="underline hover:text-blue-900 dark:hover:text-blue-200">
+                {t("links.github")}
               </Link>
             </li>
           </ul>

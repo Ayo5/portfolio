@@ -1,3 +1,26 @@
- {
-    "title": "About me"
+{
+  "title": "About Me",
+  "images": {
+    "spain": {
+      "alt": "Me during my trip to Spain, specifically in Pineda de Mar"
+    },
+    "conference": {
+      "alt": "Me at a sports seminar organized by Orange"
+    },
+    "festival": {
+      "alt": "Photo at the Paradis Artificiel festival"
+    }
+  },
+  "introduction": {
+    "paragraph1": "I am a junior developer passionate about creating innovative solutions and improving user experience. But beyond development, I am also passionate about travel, sports, and music.",
+    "paragraph2": "Traveling is more than just a hobby for me: it's a true source of inspiration and personal growth. Every destination I discover offers a unique opportunity to enrich myself. I love exploring new cultures, tasting local specialties, and meeting people from diverse backgrounds. These experiences broaden my perspective on the world and bring an open-minded approach to all aspects of my life, including my work."
+  },
+  "sport": {
+    "paragraph1": "I’m also passionate about sports. As you can see above, I took part in a seminar organized by Orange focused on sports.",
+    "paragraph2": "Team and combat sports are more than just physical activities for me; they represent a true passion that shapes my personality and my approach to life. Playing team sports, whether football or basketball, has taught me the importance of collaboration, communication, and team spirit. Every match is an opportunity to work together toward a common goal, overcome challenges, and celebrate victories, big or small. These experiences remind me that success often lies in the synergy between team members. On the other hand, combat sports like boxing or MMA have taught me discipline, resilience, and self-control. Every training session is a challenge that pushes my physical and mental limits. I appreciate the individual aspect of these disciplines, where each improvement is the result of my own effort and determination."
+  },
+  "music": {
+    "paragraph1": "I’m also passionate about music. As shown above, here’s a photo of my friends and me at the Paradis Artificiel festival.",
+    "paragraph2": "Music is a true source of inspiration and emotion in my life. It transports me and allows me to express my feelings in a unique way. I enjoy a variety of genres, from soothing melodies to upbeat rhythms—each piece has the power to tell me a story. Whether listening to my favorite artists or discovering new talents, music accompanies me during moments of relaxation and reflection. I also enjoy attending concerts and festivals, where the collective energy creates an unforgettable experience. For me, music is much more than just entertainment; it is a means of connection with others and an authentic expression of my identity."
   }
+}

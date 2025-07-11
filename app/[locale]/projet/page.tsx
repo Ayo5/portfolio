@@ -1,51 +1,54 @@
 import Card from "@/app/_components/Card";
 import { Header } from "@/app/_components/Header";
 import NavBar from "@/app/_components/NavBar";
+import { useTranslations } from "next-intl";
 
 const Projet = () => {
+  const t = useTranslations("projects");
+
   return (
     <div className="bg-background text-foreground min-h-screen">
-      {/* Affichage du Header */}
+      {/* Je veux une alternance bordeeeeelll */}
       <Header />
       <NavBar />
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 place-items-center animate-slide-up-fade animation-delay-100 p-6">
         <Card
-          title="Compétition Huawei"
-          description="Participation à la compétition Huawei ICT 2023, où nous avons développé un projet de gestion de données en temps réel pour les entreprises."
+          title={t("huawei.title")}
+          description={t("huawei.description")}
           imageUrl="/projet/huawei.png"
-          altText="Logo Huawei"
+          altText={t("huawei.altText")}
           href="./projet/ray_tracer"
           tag="Python"
         />
         <Card
-          title="Ray Tracer"
-          description="Une application en Java qui permet de simuler le comportement de la lumière sur un objet"
+          title={t("rayTracer.title")}
+          description={t("rayTracer.description")}
           imageUrl="/projet/Sphere.PNG"
-          altText="Capture d'écran du résultat"
+          altText={t("rayTracer.altText")}
           href="./projet/ray_tracer"
           tag="Java"
         />
         <Card
-          title="Pok-dex"
-          description="Un site web en Python-Flask qui utilise une API Pokémon pour afficher les différents pokémon"
+          title={t("pokeDex.title")}
+          description={t("pokeDex.description")}
           imageUrl="/projet/pokedex.jpg"
-          altText="Capture de la page d'accueil"
+          altText={t("pokeDex.altText")}
           href="./projet/pok_dex"
           tag="Python-Flask"
         />
         <Card
-          title="API Board Game"
-          description="Un site qui utilise une API définie par nous-même qui permet de gérer la base de données des jeux de plateau (méthode CRUD)"
+          title={t("apiBoardGame.title")}
+          description={t("apiBoardGame.description")}
           imageUrl="/projet/site_api_board_game.png"
-          altText="Capture de la page d'accueil"
+          altText={t("apiBoardGame.altText")}
           href="./projet/api_board_game"
           tag="PHP"
         />
         <Card
-          title="Marathon Web"
-          description="Un site presque fonctionnel créé en 24h qui permet la lecture d'histoires dont vous êtes le héros"
+          title={t("marathonWeb.title")}
+          description={t("marathonWeb.description")}
           imageUrl="/projet/ScreenMarathonWeb.png"
-          altText="Capture de la page d'accueil"
+          altText={t("marathonWeb.altText")}
           href="./projet/marathon_web"
           tag="Laravel"
         />
