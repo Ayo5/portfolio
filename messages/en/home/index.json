@@ -1,16 +1,8 @@
-{
-  "home": {
+ {
     "title": "Home",
     "welcome": "Welcome to my portfolio",
     "subtitle": "Junior developer and creative",
     "project" : "Projects", 
     "about": "About me"
 
-  },
-  "about": {
-    "title": "About me"
-  },
-  "projects": {
-    "title": "Projects"
   }
-}
