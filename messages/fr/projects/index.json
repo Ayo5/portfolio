@@ -16,6 +16,7 @@
     "presentation": "Il s'agit d'un projet de groupe réalisé dans le cadre de mon BUT Informatique en 2ème année. Le Ray Tracer est une application développée en Java qui simule le comportement de la lumière sur différents objets 3D. Ce projet implémente les principes fondamentaux de l'infographie pour créer des rendus réalistes en calculant la trajectoire des rayons lumineux dans une scène virtuelle.",
     "imageAlt": "Rendu d'une sphère réfléchissante avec illumination globale",
     "imageCaption": "Rendu d'une sphère réfléchissante avec illumination globale",
+    "altText": "Ray Tracer",
     "objectif": [
       "Implémenter un moteur de rendu 3D basé sur la technique du ray tracing",
       "Simuler les interactions physiques de la lumière avec différentes surfaces",
@@ -75,6 +76,7 @@
     "description": "API Board Game est un site web qui utilise une API pour gérer la base de données des jeux de plateau.",
     "presentation": "Il s'agit d'un projet développé dans le cadre de mon BUT Informatique. API Board Game est un site web qui utilise une API définie par notre équipe qui permet de gérer la base de données des jeux de plateau à travers les méthodes CRUD (Create, Read, Update, Delete). Ce projet nous a permis de comprendre les principes fondamentaux de la conception d'API REST et de la gestion de bases de données.",
     "imageAlt": "Capture de la page d'accueil du site API Board Game",
+    "altText": "API Board Game",
     "imageCaption": "Interface utilisateur du site API Board Game",
     "objectif": [
       "Concevoir et développer une API REST fonctionnelle",
@@ -173,6 +175,7 @@
     "presentation": "Marathon Web est un projet réalisé lors d’un hackathon de 24 heures dans le cadre de mon diplôme en Informatique. L’objectif était de créer une plateforme web permettant aux utilisateurs de lire des histoires interactives à choix multiples, dans le style des livres « dont vous êtes le héros ». Ce défi intense a mis en avant notre capacité à concevoir un site complet et interactif dans un délai très court.",
     "description": "Marathon Web est une plateforme web permettant de lire des histoires interactives à choix multiples.",
     "imageAlt": "Capture d’écran de la page d’accueil de Marathon Web",
+    "altText": "Marathon Web",
     "imageCaption": "Interface utilisateur de la plateforme Marathon Web",
     "objectif": [
       "Développer une plateforme web en seulement 24 heures",
