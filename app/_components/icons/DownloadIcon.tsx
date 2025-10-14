@@ -6,7 +6,7 @@ interface DownloadIconProps extends ComponentPropsWithoutRef<"svg"> {
 }
 export const DownloadIcon: React.FC<DownloadIconProps> = ({ size = 24, ...props }) => {
     return (
-        <a href="../CV.pdf" target="_blank">
+        <a href="/cv.pdf" target="_blank" download="CV_Abdelkader_Dai.pdf" rel="noopener noreferrer">
             <svg
                 width={size}
                 height={size}

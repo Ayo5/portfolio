@@ -15,6 +15,7 @@
     "description": "Software that simulates the behavior of light on 3D objects.",
     "presentation": "This is a group project carried out as part of my 2nd year Computer Science degree. The Ray Tracer is a Java application that simulates the behavior of light on various 3D objects. This project implements fundamental computer graphics principles to create realistic renders by calculating the path of light rays in a virtual scene.",
     "imageAlt": "Render of a reflective sphere with global illumination",
+    "altText": "Ray Tracer",
     "imageCaption": "Render of a reflective sphere with global illumination",
     "objectif": [
       "Implement a 3D rendering engine based on ray tracing technique",
@@ -75,6 +76,7 @@
     "description": "API Board Game is a website that uses an API to manage a board games database.",
     "presentation": "This project was developed as part of my Computer Science degree. API Board Game is a website using an API defined by our team that manages the board games database through CRUD (Create, Read, Update, Delete) methods. This project helped us understand the fundamental principles of REST API design and database management.",
     "imageAlt": "Screenshot of the API Board Game homepage",
+    "altText": "API Board Game",
     "imageCaption": "User interface of the API Board Game website",
     "objectif": [
       "Design and develop a functional REST API",
@@ -173,6 +175,7 @@
     "presentation": "Marathon Web is a project carried out during a 24-hour hackathon as part of my Computer Science degree. The goal was to create a web platform allowing users to read interactive multiple-choice stories, in the style of 'choose your own adventure' books. This intense challenge highlighted our ability to design a complete and interactive site within a very short timeframe.",
     "description": "Marathon Web is a web platform for reading interactive multiple-choice stories.",
     "imageAlt": "Screenshot of Marathon Web homepage",
+    "altText": "Marathon Web",
     "imageCaption": "User interface of the Marathon Web platform",
     "objectif": [
       "Develop a web platform in just 24 hours",
